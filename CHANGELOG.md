@@ -1,5 +1,12 @@
 # splat Release Notes
 
+### 0.17.4
+
+* New yaml option: `ld_bss_is_noload`
+  * Allows to control if `bss` sections (and derivatived sections) will be put on a `NOLOAD` segment on the generated linker script or not.
+  * Applies to all `bss` (`sbss`, `common`, `scommon`, etc) sections.
+  * Defaults to `True`, meaning `bss` sections will be put on `NOLOAD` segments.
+
 ### 0.17.3
 
 * Move wiki to the `docs` folder
